@@ -4,57 +4,27 @@ import { motion } from "framer-motion";
 import DomeGallery from "./DomeGallery";
 
 const pictures = [
-    {
-        src: 'https://images.unsplash.com/photo-1755331039789-7e5680e26e8f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Abstract art'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1755569309049-98410b94f66d?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Modern sculpture'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1755497595318-7e5e3523854f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Digital artwork'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1755353985163-c2a0fe5ac3d8?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Contemporary art'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1745965976680-d00be7dc0377?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Geometric pattern'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1752588975228-21f44630bb3c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Textured surface'
-    },
-    { src: 'https://pbs.twimg.com/media/Gyla7NnXMAAXSo_?format=jpg&name=large', alt: 'Social media image' },
-    // Repeat to fill the dome
-    {
-        src: 'https://images.unsplash.com/photo-1755331039789-7e5680e26e8f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Abstract art'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1755569309049-98410b94f66d?q=80&w=772&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Modern sculpture'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1755497595318-7e5e3523854f?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Digital artwork'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1755353985163-c2a0fe5ac3d8?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Contemporary art'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1745965976680-d00be7dc0377?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Geometric pattern'
-    },
-    {
-        src: 'https://images.unsplash.com/photo-1752588975228-21f44630bb3c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        alt: 'Textured surface'
-    },
-    { src: 'https://pbs.twimg.com/media/Gyla7NnXMAAXSo_?format=jpg&name=large', alt: 'Social media image' }
+    { src: '/home1.jpg', alt: 'Memory 1' },
+    { src: '/home2.jpg', alt: 'Memory 2' },
+    { src: '/home3.jpg', alt: 'Memory 3' },
+    { src: '/home4.jpg', alt: 'Memory 4' },
+    { src: '/home5.jpg', alt: 'Memory 5' },
+    { src: '/2.jpg', alt: 'Memory 6' },
+    { src: '/5.jpg', alt: 'Memory 7' },
+    { src: '/6.jpg', alt: 'Memory 8' },
+    { src: '/10.jpeg', alt: 'Memory 9' },
+    { src: '/11.jpeg', alt: 'Memory 10' },
+    { src: '/12.jpeg', alt: 'Memory 11' },
+    { src: '/13.jpeg', alt: 'Memory 12' },
+    { src: '/14.jpeg', alt: 'Memory 13' },
+    { src: '/15.jpeg', alt: 'Memory 14' },
+    { src: '/16.jpeg', alt: 'Memory 15' },
+    // Duplicate to fill space if needed
+    { src: '/home1.jpg', alt: 'Memory 1' },
+    { src: '/home2.jpg', alt: 'Memory 2' },
+    { src: '/home3.jpg', alt: 'Memory 3' },
+    { src: '/home4.jpg', alt: 'Memory 4' },
+    { src: '/home5.jpg', alt: 'Memory 5' },
 ];
 
 export default function MemoryGallerySection() {

@@ -11,7 +11,7 @@ export default function Home() {
     <main className="min-h-screen bg-[#fdfbf7] overflow-x-hidden">
       <HeroSection />
       <MemoriesSection />
-      <LetterSection />
+      {/* <LetterSection /> */}
       <MemoryGallerySection />
       <VideoSection />
       <MusicSection />

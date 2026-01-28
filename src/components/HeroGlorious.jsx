@@ -8,7 +8,7 @@ import { ChevronRight, ChevronLeft, MousePointer2, Sparkles, ChevronDown } from 
 const SLIDES = [
     {
         id: 1,
-        image: "/1.png",
+        image: "/home1.jpg",
         title: "Glorious",
         subtitle: "Unmatched Beauty",
         description: "Step into a world where elegance meets infinity. You are the masterpiece.",
@@ -17,7 +17,7 @@ const SLIDES = [
     },
     {
         id: 2,
-        image: "/2.jpg",
+        image: "/home2.jpg",
         title: "Ethereal",
         subtitle: "Beyond Dreams",
         description: "Floating through moments of pure magic and timeless grace.",
@@ -26,7 +26,7 @@ const SLIDES = [
     },
     {
         id: 3,
-        image: "/3.jpg",
+        image: "/home3.jpg",
         title: "Radiant",
         subtitle: "Shine Bright",
         description: "Your glow illuminates the darkness, creating a path of light.",
@@ -35,12 +35,21 @@ const SLIDES = [
     },
     {
         id: 4,
-        image: "/6.png",
+        image: "/home4.jpg",
         title: "Majestic",
         subtitle: "Royal Presence",
         description: "Commanding attention with every glance, every smile, every move.",
         color: "#9370DB", // Medium Purple
         accent: "#8A2BE2"
+    },
+    {
+        id: 5,
+        image: "/home5.jpg",
+        title: "Timeless",
+        subtitle: "Eternal Grace",
+        description: "A beauty that transcends time, leaving a mark on eternity.",
+        color: "#FF4500", // Orange Red
+        accent: "#FF6347"
     }
 ];
 
@@ -228,11 +237,12 @@ export default function HeroGlorious() {
                                 initial="hidden"
                                 animate="visible"
                                 exit="exit"
-                                className="text-7xl md:text-[10rem] font-bold leading-[0.9] text-transparent bg-clip-text font-serif"
+                                className="text-7xl md:text-[10rem] font-bold leading-[0.9] text-transparent bg-clip-text font-serif mix-blend-overlay opacity-90"
                                 style={{
                                     backgroundImage: `linear-gradient(to bottom, #ffffff, ${currentSlide.color})`,
                                     fontFamily: '"Cinzel", "Playfair Display", serif',
-                                    textShadow: `0 0 50px ${currentSlide.accent}40`
+                                    textShadow: `0 0 50px ${currentSlide.accent}40`,
+                                    zIndex: 10
                                 }}
                             >
                                 {currentSlide.title}

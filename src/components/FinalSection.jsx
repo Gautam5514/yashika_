@@ -59,7 +59,7 @@ export default function FinalSection() {
                         Happy Birthday,
                     </h1>
                     <h1 className="text-5xl md:text-8xl font-handwriting text-transparent bg-clip-text bg-gradient-to-r from-pink-400 via-white to-purple-400 drop-shadow-[0_0_35px_rgba(255,255,255,0.2)] cursor-target px-6 py-2">
-                        Gautam <span className="text-red-500 inline-block animate-bounce-slow">❤️</span>
+                        Yashika <span className="text-red-500 inline-block animate-bounce-slow">❤️</span>
                     </h1>
                 </div>
 

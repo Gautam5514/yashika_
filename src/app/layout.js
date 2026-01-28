@@ -14,7 +14,7 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata = {
-  title: "Happy Birthday Gautam ❤️",
+  title: "Happy Birthday Yashika ❤️",
   description: "A surprise for the most beautiful person.",
 };
 
