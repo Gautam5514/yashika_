@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fdfbf7;
+  /* Creamy White */
+  --foreground: #4a4a4a;
+  /* Soft Charcoal */
+  --primary: #e0a6b7;
+  /* Rose */
+  --secondary: #ffd1dc;
+  /* Pastel Pink */
+  --accent: #b5ebd6;
+  /* Soft Mint (optional for variety) */
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+
+  --font-sans: var(--font-inter);
+  --font-handwriting: var(--font-great-vibes);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-handwriting);
+}
